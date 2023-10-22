@@ -1,2 +1,1 @@
-# godot_game
-First Godot v4 game
+# my first Godot game

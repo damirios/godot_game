@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwckld4yod30f"]
+
+[ext_resource type="Texture2D" uid="uid://dow58ufoxdfbm" path="res://assets/SingleTile.png" id="1_g28ci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eqrfa"]
+size = Vector2(67.4958, 31.6522)
+
+[node name="Platform" type="Node2D"]
+
+[node name="SingleTile" type="Sprite2D" parent="."]
+scale = Vector2(3.71875, 2.875)
+texture = ExtResource("1_g28ci")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="SingleTile"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SingleTile/StaticBody2D"]
+position = Vector2(0.134449, 0.173904)
+shape = SubResource("RectangleShape2D_eqrfa")

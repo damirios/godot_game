@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://c11vs6qpg4vhb"]
+
+[ext_resource type="Texture2D" uid="uid://cnhw3c470s8h5" path="res://assets/BG2.png" id="1_2yxnm"]
+[ext_resource type="PackedScene" uid="uid://c1eq3cqaw63c0" path="res://scenes/player.tscn" id="1_f5myr"]
+[ext_resource type="PackedScene" uid="uid://bwckld4yod30f" path="res://scenes/platform.tscn" id="2_5lkjq"]
+[ext_resource type="Texture2D" uid="uid://bav26tkk734ae" path="res://assets/BG3.png" id="2_vuf5v"]
+
+[node name="Game" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="Bg2" type="Sprite2D" parent="."]
+position = Vector2(582.5, 138.5)
+scale = Vector2(3.62813, 3.23438)
+texture = ExtResource("1_2yxnm")
+
+[node name="Bg3" type="Sprite2D" parent="."]
+position = Vector2(580, 328)
+scale = Vector2(3.6375, 3.41667)
+texture = ExtResource("2_vuf5v")
+
+[node name="Player" parent="." instance=ExtResource("1_f5myr")]
+position = Vector2(119, 85)
+
+[node name="Platform" parent="." instance=ExtResource("2_5lkjq")]
+position = Vector2(165, 576)
+
+[node name="Platform2" parent="." instance=ExtResource("2_5lkjq")]
+position = Vector2(574, 446)
+
+[node name="Platform3" parent="." instance=ExtResource("2_5lkjq")]
+position = Vector2(994, 185)
